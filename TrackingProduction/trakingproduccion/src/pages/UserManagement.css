@@ -1,0 +1,15 @@
+
+.user-management-form {
+    background-color: var(--color5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .user-management-form label {
+    color: var(--color1);
+  }
+  
+  .user-management-form button {
+    background-color: var(--color4);
+    border-color: var(--color4);
+  }

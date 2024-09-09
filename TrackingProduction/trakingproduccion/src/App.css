@@ -1,0 +1,27 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+  margin-left: 0; /* Ajusta el margen izquierdo cuando el menú está cerrado */
+  transition: margin-left 0.3s ease-in-out; /* Agrega una transición suave */
+}
+
+.App.open  {
+  margin-left: 200px; /* Restaura el margen cuando el menú está abierto */
+}
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  text-align: center;
+}

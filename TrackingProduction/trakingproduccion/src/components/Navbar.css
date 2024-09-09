@@ -1,0 +1,116 @@
+/* Estilos para pantallas grandes y pequeñas */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: var(--color3);
+    color: var(--color5);
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar.collapsed {
+    width: 60px;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar-menu {
+    width: 100%;
+  }
+  
+  .sidebar-menu .nav-link {
+    padding-left: 20px;
+    color: #422c14;
+  }
+  
+  .sidebar-menu .nav-link.active {
+    background-color: var(--color3);
+    color: #422c14;
+  }
+  
+  .sidebar .toggle-menu-btn {
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .sidebar .toggle-menu-btn svg {
+    color: #422c14;
+    font-size: 1.5rem;
+  }
+  
+  .category-header {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos específicos para categorías */
+  .category-header.category-users {
+    background-color: var(--color2); /* Cambia este color según tus necesidades */
+  }
+  
+  .category-header.category-wms {
+    background-color: var(--color2); /* Cambia este color según tus necesidades */
+  }
+  
+  .category-header.category-crm {
+    background-color: var(--color2); /* Cambia este color según tus necesidades */
+  }
+  
+  .category-header.category-activos {
+    background-color: var(--color2); /* Cambia este color según tus necesidades */
+  }
+  
+  
+  
+  
+  .sidebar-footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--color3);
+    color: var(--color5);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .sidebar-footer.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* Estilos específicos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 250px;
+      transform: translateX(-250px);
+    }
+  
+    .App.open {
+      margin-left: 0;
+    }
+  
+    .sidebar.collapsed {
+      transform: translateX(-250px);
+    }
+  }
+  
+  .toggle-menu-btn {
+    position: fixed;
+    top: 15px; /* Ajustar la posición superior para evitar la superposición */
+    right: 15px; /* Ajustar la posición derecha para evitar la superposición */
+    z-index: 1100;
+    background-color: var(--color3);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,0 +1,22 @@
+.assign-roles-form {
+    background-color: var(--color5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .assign-roles-form label {
+    color: var(--color1);
+  }
+  
+  .assign-roles-form button {
+    background-color: var(--color4);
+    border-color: var(--color4);
+  }
+  
+  .assign-roles-form-permission {
+    background-color: var(--color5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px; /* Agregamos margen superior para separarlo del formulario de roles */
+  }
+  
